@@ -20,6 +20,8 @@ public class MainActivity extends AppCompatActivity {
         } catch (IOException e) {
             e.printStackTrace();
         }
+        BusinessLab lab = BusinessLab.get(this);
+
         scan.useDelimiter("[,\n]");
 
     }

@@ -1,5 +1,6 @@
 package com.example.thrivelocal;
 
+import android.content.ContentValues;
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 
@@ -18,7 +19,16 @@ public class BusinessLab {
         return sBusinessLab;
     }
 
-    private  BusinessLab(Context context) {
+    public void addToDatabase(Business name) {
+        ContentValues contentValues = new ContentValues();
+        contentValues.put("COUNTRY", name.country);
+        contentValues.put("GOOD", name.good);
+        contentValues.put("CHILD", name.childLabor);
+        contentValues.put("FORCED", name.forcedLabor);
+        mDatabase.insert("COUNTRY", null, contentValues);
+    }
+
+    private BusinessLab(Context context) {
         mContext = context.getApplicationContext();
         mDatabase = new BusinessBaseHelper(mContext).getWritableDatabase();
     }
