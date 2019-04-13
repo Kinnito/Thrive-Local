@@ -6,9 +6,10 @@ public class BusinessDbSchema {
 
         public static final class Cols {
             public static final String UUID = "uuid";
-            public static final String NAME = "name";
-            public static final String CITY = "city";
-            public static final String STATE = "state";
+            public static final String COUNTRY = "country";
+            public static final String GOOD = "good";
+            public static final String CHILD = "child_labor";
+            public static final String FORCED = "forced_labor";
         }
     }
 }
