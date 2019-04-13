@@ -29,6 +29,9 @@ public class MainActivity extends AppCompatActivity {
             case R.id.help:
                 startActivity(new Intent(this, MainActivity.class));
                 return true;
+            case R.id.searchresults:
+                startActivity(new Intent(this, SearchResults.class));
+                return true;
             default:
                 return super.onOptionsItemSelected(item);
         }

@@ -10,4 +10,9 @@
         android:enabled="true"
         android:icon="@drawable/coffeecup"
         android:title="Help" />
+    <item
+        android:id="@+id/searchresults"
+        android:enabled="true"
+        android:icon="@drawable/coffeecup"
+        android:title="Coffee" />
 </menu>
