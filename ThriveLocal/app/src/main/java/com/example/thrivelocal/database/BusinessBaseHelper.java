@@ -17,8 +17,9 @@ public class BusinessBaseHelper extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
         sqLiteDatabase.execSQL("create table " + BusinessTable.NAME + "(" +
-                BusinessTable.Cols.UUID + ", " + BusinessTable.Cols.NAME + ", " +
-                BusinessTable.Cols.CITY + ", " + BusinessTable.Cols.STATE + ")");
+                BusinessTable.Cols.UUID + ", " + BusinessTable.Cols.COUNTRY + ", " +
+                BusinessTable.Cols.GOOD + ", " + BusinessTable.Cols.CHILD + ", " +
+                BusinessTable.Cols.FORCED + ")");
     }
 
     @Override

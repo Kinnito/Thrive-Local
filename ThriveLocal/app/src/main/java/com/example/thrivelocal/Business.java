@@ -1,13 +1,15 @@
 package com.example.thrivelocal;
 
 class Business {
-    String name;
-    String city;
-    String state;
+    String country;
+    String good;
+    String childLabor;
+    String forcedLabor;
 
-    Business(String n, String c, String s) {
-        this.name = n;
-        this.city = c;
-        this.state = s;
+    Business(String country, String good, String childLabor, String forcedLabor) {
+        this.country = country;
+        this.good = good;
+        this.childLabor = childLabor;
+        this.forcedLabor = forcedLabor;
     }
 }
