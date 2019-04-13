@@ -9,25 +9,33 @@
 
     <ImageView
         android:id="@+id/image0"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/coffeebeansbackground01"
-        android:alpha="0.75"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/coffebeans2"
+        android:alpha="0.85"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         />
 
     <TextView
+        android:id="@+id/fairtrade"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Support a fair trade economy"
-        android:textSize="15dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
         android:textColor="@color/colorWhite"
-        android:textFontWeight="10dp"
         android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textAlignment="center"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/search_bar"/>
+        app:layout_constraintTop_toBottomOf="@+id/search_bar"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        />
 
     <SearchView
         android:id="@+id/search_bar"
@@ -46,11 +54,15 @@
         android:layout_height="wrap_content"
         android:padding="5dp"
         android:text="Enter a code"
+        android:textColor="@color/colorWhite"
         android:layout_marginBottom="20dp"
-        android:background="@color/colorAccent"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorPrimary"
+        app:layout_constraintTop_toBottomOf="@+id/fairtrade"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         />
+
 
 </android.support.constraint.ConstraintLayout>
