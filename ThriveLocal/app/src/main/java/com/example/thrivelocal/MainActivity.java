@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.about:
-                startActivity(new Intent(this, MainActivity.class));
+                startActivity(new Intent(this, AboutActivity.class));
                 return true;
             case R.id.help:
                 startActivity(new Intent(this, MainActivity.class));
