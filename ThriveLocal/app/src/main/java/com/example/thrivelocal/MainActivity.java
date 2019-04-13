@@ -24,5 +24,13 @@ public class MainActivity extends AppCompatActivity {
 
         scan.useDelimiter("[,\n]");
 
+        while (scan.hasNextLine()) {
+            String country = scan.next();
+            String good = scan.next();
+            String child = scan.next();
+            String forced = scan.next();
+
+            lab.addToDatabase(new Business(country, good, child, forced));
+        }
     }
 }
