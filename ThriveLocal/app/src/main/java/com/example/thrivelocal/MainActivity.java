@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(this, SearchResults.class));
                 return true;
             case R.id.map:
-                startActivity(new Intent(this, SearchResults.class));
+                startActivity(new Intent(this, MapActivity.class));
                 return true;
             default:
                 return super.onOptionsItemSelected(item);
