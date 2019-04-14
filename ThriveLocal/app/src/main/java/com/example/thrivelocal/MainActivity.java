@@ -34,6 +34,8 @@ public class MainActivity extends AppCompatActivity {
             String forced = scan.next();
 
             lab.addToDatabase(new Business(country, good, child, forced));
+
+            if (country.equals("Zambia")) break;
         }
     }
 

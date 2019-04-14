@@ -5,6 +5,7 @@ import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 
 import com.example.thrivelocal.database.BusinessBaseHelper;
+import com.example.thrivelocal.database.BusinessDbSchema;
 
 public class BusinessLab {
     private static BusinessLab sBusinessLab;
@@ -25,7 +26,7 @@ public class BusinessLab {
         contentValues.put("GOOD", name.good);
         contentValues.put("CHILD", name.childLabor);
         contentValues.put("FORCED", name.forcedLabor);
-        mDatabase.insert("COUNTRY", null, contentValues);
+        mDatabase.insert("businesses", null, contentValues);
     }
 
     private BusinessLab(Context context) {
