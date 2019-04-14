@@ -15,4 +15,9 @@
         android:enabled="true"
         android:icon="@drawable/coffeecup"
         android:title="Coffee" />
+    <item
+        android:id="@+id/map"
+        android:enabled="true"
+        android:icon="@drawable/coffeecup"
+        android:title="Map" />
 </menu>

@@ -5,10 +5,10 @@
     android:layout_height="match_parent">
 
     <ImageView
-        android:id="@+id/image2"
+        android:id="@+id/image1"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/coffeesearch"
+        android:src="@drawable/map"
         android:alpha="0.85"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -17,4 +17,3 @@
         />
 
 </android.support.constraint.ConstraintLayout>
-
